@@ -1,0 +1,117 @@
+body {
+ overflow-y: hidden;
+ overflow-x: hidden;
+}
+
+.izq {
+  height: 100vh;
+}
+
+.logo {
+  font-family: "Acumin Pro Extracondenser medium";
+  font-size: 138px;
+  letter-spacing: 4px;
+  height: 139px;
+  text-align: center;
+}
+
+.logo2 {
+  font-family: "Acumin Pro Extracondenser medium";
+  font-size: 30px;
+  letter-spacing: 11px;
+  text-align: center;
+}
+
+.linea2 {
+  position: fixed;
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  right: 35px;
+  top: 35px;
+  height: 71%;
+  width: 30%;
+
+}
+
+.linea {
+  position: fixed;
+  border-left: 1px solid rgba(0, 0, 0, 0.43);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.43);
+  left: 35px;
+  bottom: 35px;
+  height: 71%;
+  width: 30%;
+}
+
+.tux {
+  border: 2px solid rgba(0, 0, 0, 1);
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.image-back {
+  background-image: url(https://res.cloudinary.com/ddlmgs04n/image/upload/v1681957662/Beton/Santa_Ana_Frente_mebptf.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.borde {
+  background: black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borde:hover {
+  background: #b1b1b180;
+}
+
+@media screen and (max-width: 760px) {
+  .izq {
+    height: 50vh;
+  }
+
+  .image-back {
+    height: 50vh;
+  }
+
+  .linea,
+  .linea2 {
+    display: none;
+  }
+
+  .logo {
+    font-size: 90px;
+    height: 94px;
+  }
+
+  .logo2 {
+    font-size: 20px;
+  }
+
+  .tux {
+    font-size: 15px;
+  }
+
+}
+
+@media (min-width: 761px) and (max-width: 960px) {
+  .logo {
+    font-size: 100px;
+    height: 94px;
+  }
+
+  .logo2 {
+    font-size: 30px;
+  }
+
+  .tux {
+    font-size: 15px;
+  }
+}
